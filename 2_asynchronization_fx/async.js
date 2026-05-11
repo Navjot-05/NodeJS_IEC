@@ -10,5 +10,9 @@ class Test{
     constructor(name){
         this.name=name;
     }
+    show()
+    {
+        console.log(this.name);
+    }
 }
 let s1 = new Test("Navjot");

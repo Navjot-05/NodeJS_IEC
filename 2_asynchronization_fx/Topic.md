@@ -1,0 +1,1 @@
+1. asynchrony means reads line by line but if it gets a thing that is able to be get in to side stack then executes after the synchronous code runs
