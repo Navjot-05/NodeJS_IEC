@@ -1,18 +1,8 @@
-// function fetchData(callback){
-//     setTimeout(() => callback("data is recalled"),1000);
-// }
-// const fetchDatapromise=(resolve)=> {
-//     return new Promise();
-// };
-
-
-class Test{
-    constructor(name){
-        this.name=name;
-    }
-    show()
-    {
-        console.log(this.name);
-    }
+// basic syntax of async fx is
+async function abcd() {
+    var blob = await fetch(`https://randomuser.me/api`);
+    //rest of the code that is going to use async function
+    var ans = await blob.json();
+    console.log(ans.results[0].name);
 }
-let s1 = new Test("Navjot");
+abcd();
